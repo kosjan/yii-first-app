@@ -1,0 +1,15 @@
+127.0.0.1 - - [31/Jan/2020:08:52:35 +0400] "GET /web/ HTTP/1.1" 200 7800
+127.0.0.1 - - [31/Jan/2020:08:52:35 +0400] "GET /web/assets/83ff2020/yii.js HTTP/1.1" 200 6154
+127.0.0.1 - - [31/Jan/2020:08:52:35 +0400] "GET /web/assets/a8692084/js/bootstrap.js HTTP/1.1" 200 16484
+127.0.0.1 - - [31/Jan/2020:08:52:35 +0400] "GET /web/assets/a8692084/css/bootstrap.css HTTP/1.1" 200 21614
+127.0.0.1 - - [31/Jan/2020:08:52:35 +0400] "GET /web/assets/741be329/jquery.js HTTP/1.1" 200 83704
+127.0.0.1 - - [31/Jan/2020:08:52:35 +0400] "GET /web/index.php?r=debug%2Fdefault%2Ftoolbar&tag=5e33b293a7084 HTTP/1.1" 200 3650
+127.0.0.1 - - [31/Jan/2020:08:52:35 +0400] "GET /favicon.ico HTTP/1.1" 404 485
+127.0.0.1 - - [31/Jan/2020:12:20:23 +0400] "GET /web/ HTTP/1.1" 200 7803
+127.0.0.1 - - [31/Jan/2020:12:20:23 +0400] "GET /web/assets/a8692084/css/bootstrap.css HTTP/1.1" 200 21614
+127.0.0.1 - - [31/Jan/2020:12:20:23 +0400] "GET /web/assets/83ff2020/yii.js HTTP/1.1" 200 6154
+127.0.0.1 - - [31/Jan/2020:12:20:23 +0400] "GET /web/assets/a8692084/js/bootstrap.js HTTP/1.1" 200 16484
+127.0.0.1 - - [31/Jan/2020:12:20:23 +0400] "GET /web/assets/741be329/jquery.js HTTP/1.1" 200 83704
+127.0.0.1 - - [31/Jan/2020:12:20:23 +0400] "GET /web/index.php?r=debug%2Fdefault%2Ftoolbar&tag=5e33e347c8b0f HTTP/1.1" 200 3649
+127.0.0.1 - - [31/Jan/2020:12:22:02 +0400] "GET /web/ HTTP/1.1" 200 7803
+127.0.0.1 - - [31/Jan/2020:12:22:02 +0400] "GET /web/index.php?r=debug%2Fdefault%2Ftoolbar&tag=5e33e3aa0379d HTTP/1.1" 200 3647
