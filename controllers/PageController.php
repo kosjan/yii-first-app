@@ -19,10 +19,26 @@ class PageController extends Controller
      *
      * @return string
      */
+     /**
+      * Для страницы списка товаров
+      */
     public function actionListproduct()
     {
-        $this->layout = 'default';
         return $this->render('listproduct');
+    }
+    /**
+     * Для страницы новостей
+     */
+    public function actionNews()
+    {
+        return $this->render('news');
+    }
+    /**
+     * Для страницы контактов
+     */
+    public function actionContacts()
+    {
+        return $this->render('contacts');
     }
 
 
