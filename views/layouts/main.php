@@ -27,37 +27,7 @@ AppAsset::register($this);
 <?php $this->beginBody() ?>
 
 <div class="wrap">
-    <?php
-    /*
-    NavBar::begin([
-        'brandLabel' => Yii::$app->name,
-        'brandUrl' => Yii::$app->homeUrl,
-        'options' => [
-            'class' => 'navbar-inverse navbar-fixed-top',
-        ],
-    ]);
-    echo Nav::widget([
-        'options' => ['class' => 'navbar-nav navbar-right'],
-        'items' => [
-            ['label' => 'Home', 'url' => ['/site/index']],
-            ['label' => 'About', 'url' => ['/site/about']],
-            ['label' => 'Contact', 'url' => ['/site/contact']],
-            Yii::$app->user->isGuest ? (
-                ['label' => 'Login', 'url' => ['/site/login']]
-            ) : (
-                '<li>'
-                . Html::beginForm(['/site/logout'], 'post')
-                . Html::submitButton(
-                    'Logout (' . Yii::$app->user->identity->username . ')',
-                    ['class' => 'btn btn-link logout']
-                )
-                . Html::endForm()
-                . '</li>'
-            )
-        ],
-    ]);
-    NavBar::end();*/
-    ?>
+
 
     <header>
      <div class="container">
@@ -94,7 +64,37 @@ AppAsset::register($this);
        <div class="container">
          <div class="row">
              <nav>
-                 <!-- Brand and toggle get grouped for better mobile display -->
+               <?php
+
+               NavBar::begin([
+                   'brandUrl' => Yii::$app->homeUrl,
+                   'options' => [
+                       'class' => ' ',
+                   ],
+               ]);
+               echo Nav::widget([
+                   'options' => ['class' => 'navbar-nav'],
+                   'items' => [
+                       ['label' => 'Главная', 'url' => ['/site/index']],
+                       ['label' => 'Список товаров', 'url' => ['/page/listproduct']],
+                       ['label' => 'Contact', 'url' => ['/site/contact']],
+                       Yii::$app->user->isGuest ? (
+                           ['label' => 'Login', 'url' => ['/site/login']]
+                       ) : (
+                           '<li>'
+                           . Html::beginForm(['/site/logout'], 'post')
+                           . Html::submitButton(
+                               'Logout (' . Yii::$app->user->identity->username . ')',
+                               ['class' => 'btn btn-link logout']
+                           )
+                           . Html::endForm()
+                           . '</li>'
+                       )
+                   ],
+               ]);
+               NavBar::end();
+               ?>
+<!--
                  <div class="navbar-header">
                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                          <span class="sr-only">Toggle navigation</span>
@@ -104,7 +104,7 @@ AppAsset::register($this);
                        </button>
                  </div>
 
-                 <!-- Collect the nav links, forms, and other content for toggling -->
+
                  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                    <ul class="nav navbar-nav">
                      <li class="active"><a href="#">Синглы</a></li>
@@ -112,7 +112,8 @@ AppAsset::register($this);
                      <li><a href="#">Аксессуары</a></li>
                      <li><a href="#">Мерч TradeCard</a></li>
                    </ul>
-                 </div><!-- /.navbar-collapse -->
+                 </div>
+-->
              </nav>
          </div>
        </div>
@@ -199,7 +200,7 @@ AppAsset::register($this);
                            <span>-10%</span>
                            <img src="images/prod3.jpg">
                        </a>
-                       <a href="#" class="product_title">Пастырь кошамров</a>
+                       <a href="#" class="product_title">Пастырь кошмаров</a>
                        <div class="product_price">
                            <span class="price">230 руб</span>
                            <span class="price_old">250 руб</span>
