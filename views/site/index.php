@@ -2,8 +2,5 @@
 
 /* @var $this yii\web\View */
 
-$this->title = 'Мое первое приложение';
+$this->title = 'Интернет-магазин карт MTG - TradeCard.net!';
 ?>
-<div class="site-index">
-<p>Текст главной страницы</p>
-</div>
