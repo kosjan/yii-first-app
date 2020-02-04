@@ -7,8 +7,8 @@ use yii\filters\AccessControl;
 use yii\web\Controller;
 use yii\web\Response;
 use yii\filters\VerbFilter;
-use app\models\LoginForm;
-use app\models\ContactForm;
+use app\models\Categories;
+use app\models\Products;
 /*Контроллер страниц сайта*/
 class PageController extends Controller
 {
@@ -24,8 +24,45 @@ class PageController extends Controller
     public function actionListproduct()
     {
         $this->layout = 'default';
-        return $this->render('listproduct');
+
+        if(isset($_GET['id']) && $_GET['id'] != "" && filter_var($_GET['id'], FILTER_VALIDATE_INT))
+        {
+
+          $categories = Categories::find()->where(['id' => $_GET['id']])->asArray()->one();
+          if(count($categories) > 0)
+
+          {
+            $products_array = Products::find()->where(['category' => $_GET['id']])->asArray()->all();
+            $count_prod = count($products_array);
+            return $this->render('listproduct', compact('categories', 'products_array','count_prod'));
+          }
+        }
+        return $this->redirect(['page/catalog']);
+
     }
+    /**
+     * Для страницы каталога
+     */
+   public function actionCatalog()
+   {
+       $this->layout = 'default';
+
+       $categories = Categories::find()->asArray()->all();
+
+       return $this->render('catalog', compact('categories'));
+   }
+
+   /**
+    * Для страницы товаров
+    */
+  public function actionProduct()
+  {
+      $this->layout = 'default';
+
+      //$categories = Categories::find()->asArray()->all();
+
+      return $this->render('product');
+  }
     /**
      * Для страницы новостей
      */
@@ -50,5 +87,21 @@ class PageController extends Controller
       $this->layout = 'default';
       return $this->render('login');
   }
+  /**
+  * Для страницы корзины
+  */
+ public function actionCart()
+ {
+     $this->layout = 'default';
+     return $this->render('cart');
+ }
+ /**
+ * Для страницы списка желаний
+ */
+public function actionListorder()
+{
+    $this->layout = 'default';
+    return $this->render('listorder');
+}
 
 }

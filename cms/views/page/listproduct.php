@@ -1,7 +1,7 @@
 <?php
 
 /* @var $this yii\web\View */
-
+use yii\helpers\Url;
 $this->title = 'Список товаров';
 ?>
 <div class="row">
@@ -9,7 +9,7 @@ $this->title = 'Список товаров';
         <div class="navigation">
             <ul>
                 <li><a href="#"><i class="glyphicon glyphicon-home"></i></a></li>
-                <li><a href="#">Синглы</a></li>
+                <li><a href="#"><?php echo $categories['name'];?></a></li>
             </ul>
         </div>
     </div>
@@ -34,21 +34,26 @@ $this->title = 'Список товаров';
     </form>
     </div>
 <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
-<div class="short_description">
-    <img src="images/prod1.jpg">
-    <div>
-        <h2>Сингловая продукция</h2>
-        <p>Очень часто различного рода игроки сталкиваются с надобностью купить карточки определенного типа. Но как их найти? Наш магазин поможет вам с этим и подберет лучшую сингловую продукцию по вашим пребованиям!</p>
+    <div class="short_description">
+        <?php
+          //echo "<pre>";
+          //print_r($products_array);
+          //echo "</pre>";
+        ?>
+        <img src="images/<?php echo $categories['img'];?>">
+        <div>
+          <h2><?php echo $categories['name'];?></h2>
+          <p><?php echo $categories['description'];?></p>
+        </div>
     </div>
-</div>
 <div class="row content">
 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 header_list_prod">
 <div class="row">
   <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
-    <h1>Синглы</h1>
+    <h1><?php echo $categories['name'];?></h1>
   </div>
   <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 value_prod">
-    <p>В наличии: 4</p>
+    <p>В наличии: <?php echo $count_prod;?></p>
   </div>
 </div>
 </div>
@@ -83,73 +88,41 @@ $this->title = 'Список товаров';
   </div>
 </div>
 </div>
-<div class="col-lg-4 col-md-6 col-sm-4 col-xs-12">
-<div class="product">
-  <a href="#" class="product_img">
-    <span>-10%</span>
-    <img src="images/prod4.jpg">
-  </a>
-  <a href="#" class="product_title">Нечестивый алтарь</a>
-  <div class="product_price">
-    <span class="price">600 руб</span>
-    <span class="price_old">700 руб</span>
-  </div>
-  <div class="product_btn">
-    <a href="#" class="cart"><i class="glyphicon glyphicon-shopping-cart"></i></a>
-    <a href="#" class="mylist">Список желаний</a>
-  </div>
-</div>
-</div>
-    <div class="col-lg-4 col-md-6 col-sm-4 col-xs-12">
-<div class="product">
-  <a href="#" class="product_img">
-    <span>-10%</span>
-    <img src="images/prod1.jpg">
-  </a>
-  <a href="#" class="product_title">Всадник ночи</a>
-  <div class="product_price">
-    <span class="price">420 руб</span>
-    <span class="price_old">450 руб</span>
-  </div>
-  <div class="product_btn">
-    <a href="#" class="cart"><i class="glyphicon glyphicon-shopping-cart"></i></a>
-    <a href="#" class="mylist">Список желаний</a>
-  </div>
-</div>
-</div>
-<div class="col-lg-4 col-md-6 col-sm-4 col-xs-12">
-<div class="product">
-  <a href="#" class="product_img">
-    <span>-10%</span>
-    <img src="images/prod2.jpg">
-  </a>
-  <a href="#" class="product_title">Оракл Тассы</a>
-  <div class="product_price">
-    <span class="price">170 руб</span>
-    <span class="price_old">200 руб</span>
-  </div>
-  <div class="product_btn">
-    <a href="#" class="cart"><i class="glyphicon glyphicon-shopping-cart"></i></a>
-    <a href="#" class="mylist">Список желаний</a>
-  </div>
-</div>
-</div>
-<div class="col-lg-4 col-md-6 col-sm-4 col-xs-12">
-<div class="product">
-  <a href="#" class="product_img">
-    <span>-10%</span>
-    <img src="images/prod3.jpg">
-  </a>
-  <a href="#" class="product_title">Пастырь кошмаров</a>
-  <div class="product_price">
-    <span class="price">230 руб</span>
-    <span class="price_old">250 руб</span>
-  </div>
-  <div class="product_btn">
-    <a href="#" class="cart"><i class="glyphicon glyphicon-shopping-cart"></i></a>
-    <a href="#" class="mylist">Список желаний</a>
-  </div>
-</div>
-</div>
+    <?php foreach ($products_array as $product_array):?>
+
+    <!--<div class="col-lg-4 col-md-6 col-sm-4 col-xs-12">-->
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 view_list">
+      <div class="product">
+        <a href="#" class="product_img">
+          <?php if ($product_array['price'] != 0):?>
+          <span>-<?php echo round(100 - $product_array['price_old']*100/$product_array['price']);?>%</span>
+          <?php endif;?>
+          <img src="images/<?php echo $product_array['img'];?>">
+        </a>
+        <a href="<?=Url::toRoute(['page/product','id' => $product_array['id']]);?>" class="product_title"><?php echo $product_array['name'];?></a>
+        <div class="product_price">
+          <span class="price"><?php echo $product_array['price_old'];?> руб</span>
+          <?php if ($product_array['price'] != 0):?>
+          <span class="price_old"><?php echo $product_array['price'];?> руб</span>
+        <?php endif;?>
+
+        </div>
+        <div class="desc_prod">
+          <table class="table table-striped table-bordered">
+            <tr>
+              <td>Описание</td>
+              <td>Карта</td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="product_btn">
+          <a href="<?=Url::toRoute(['page/cart','id' => $product_array['id']]);?>" class="cart"><i class="glyphicon glyphicon-shopping-cart"></i></a>
+          <a href="<?=Url::toRoute(['page/listorder','id' => $product_array['id']]);?>" class="mylist">Список желаний</a>
+        </div>
+      </div>
+    </div>
+
+    <?php endforeach;?>
 </div>
 </div>

@@ -77,7 +77,7 @@ AppAsset::register($this);
                    'options' => ['class' => 'navbar-nav'],
                    'items' => [
                        ['label' => 'Главная', 'url' => ['/site/index']],
-                       ['label' => 'Список товаров', 'url' => ['/page/listproduct']],
+                       ['label' => 'Список товаров', 'url' => ['/page/catalog']],
                        ['label' => 'Новости', 'url' => ['/page/news']],
                        ['label' => 'Контакты', 'url' => ['/page/contacts']],
                    ],

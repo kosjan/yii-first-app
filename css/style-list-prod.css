@@ -33,7 +33,7 @@ header{
     width: 10%;
 }
 .btn_top a{
-	color:#000;
+	color:#fff;
 }
 .btn_top a i{
 	display: inline-block;
@@ -765,6 +765,10 @@ header{
 	color: #fff;
 	text-decoration: none;
 }
+#w0.navbar{
+    margin-bottom: 0px;
+    border: 0px solid transparent;
+}
 #w0-collapse li a:hover{
 	color:#ff5b23;
 }
@@ -789,6 +793,15 @@ header{
 .value_cart span:hover{
 	opacity: 0.9;
 }
+.sortirovka_and_number_prod .control-label{
+	display: none;
+}
+.sortirovka_and_number_prod .form-group{
+	display: inline-block;
+}
+.field-sortform-number{
+	width:65px;
+}
 .sortirovka_and_number_prod p{
 	display: inline-block;
 	margin-right: 10px;
@@ -809,7 +822,6 @@ header{
 .view_list_prod i{
 	display: block;
 	font-size: 24px;
-	color:#333;
 }
 .view_list_prod a{
 	text-align: center;
@@ -820,8 +832,11 @@ header{
 .view_list_prod a:hover{
 	text-decoration: none;
 }
-.view_list_prod a:last-child i{
+.view_list_prod a i{
 	color:#ccc;
+}
+.view_list_prod a.active i{
+	color:#333;
 }
 .view_list_prod a:hover i{
 	color:#333;
@@ -874,6 +889,46 @@ header{
 .filter button:hover{
 	opacity: 0.9;
 }
+.catalog a:last-child{
+	text-align: center;
+	background-color: #333;
+	display: block;
+	padding:10px 0;
+	color:#fff;
+	position: relative;
+	z-index: 1;
+}
+.catalog .catalog_category{
+	margin-bottom:20px;
+}
+.catalog .catalog_category img{
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-ms-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	transition: all 1s ease;
+}
+.catalog .catalog_category:hover img{
+	transform: scale(1.1);
+}
+.catalog a:last-child:hover{
+	text-decoration: none;
+	opacity: 0.8;
+}
+.view_list .product{
+	overflow: hidden;
+	margin-bottom: 20px;
+}
+.view_list .product .product_img{
+	width: 35%;
+	display: block;
+	float:left;
+}
+.view_list .product .desc{
+	float:right;
+	width:60%;
+}
+
 @media all and (max-width: 1200px) and (min-width: 992px){
 	.ban_block p {
 	    color: #fff;
@@ -995,11 +1050,6 @@ header{
 	.menu_top .navbar-toggle.active .icon-bar{
 		margin-top: 0;
 		position: absolute;
-	}
-	#w0.navbar{
-		margin-bottom: 0px;
-		border: 0px solid transparent;
-
 	}
 	#w0-collapse li{
 		float: none;

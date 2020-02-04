@@ -7,6 +7,7 @@ use yii\helpers\Html;
 use yii\bootstrap\Nav;
 use yii\bootstrap\NavBar;
 use yii\widgets\Breadcrumbs;
+use yii\helpers\Url;
 use app\assets\DefaultAsset;
 
 DefaultAsset::register($this);
@@ -37,7 +38,7 @@ DefaultAsset::register($this);
               <div class="btn_top">
                 <a href="#"><i class="glyphicon glyphicon-map-marker"></i>Обратная связь</a>
                 <a href="#"><i class="glyphicon glyphicon-user"></i>Личный кабинет</a>
-                <a href="#"><i class="glyphicon glyphicon-lock"></i>Войти</a>
+                <a href="<?=Url::toRoute('page/login');?>"><i class="glyphicon glyphicon-lock"></i>Войти</a>
               </div>
               <div class="search_top">
                 <form>
@@ -73,7 +74,7 @@ DefaultAsset::register($this);
                         'options' => ['class' => 'navbar-nav'],
                         'items' => [
                           ['label' => 'Главная', 'url' => ['/site/index']],
-                          ['label' => 'Список товаров', 'url' => ['/page/listproduct']],
+                          ['label' => 'Список товаров', 'url' => ['/page/catalog']],
                           ['label' => 'Новости', 'url' => ['/page/news']],
                           ['label' => 'Контакты', 'url' => ['/page/contacts']],
                         ],
@@ -184,7 +185,7 @@ DefaultAsset::register($this);
         </div>
         <div class="row">
           <div class="col-lg-12 copy">
-            <p>© 2017 не является действующим интернет-магазином</p>
+            <p>© 2020 не является действующим интернет-магазином</p>
           </div>
         </div>
       </div>
