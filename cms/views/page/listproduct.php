@@ -2,6 +2,9 @@
 
 /* @var $this yii\web\View */
 use yii\helpers\Url;
+use yii\helpers\Html;
+use yii\widgets\ActiveForm;
+use yii\widgets\LinkPager;
 $this->title = 'Список товаров';
 ?>
 <div class="row">
@@ -60,40 +63,30 @@ $this->title = 'Список товаров';
 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 <div class="row">
   <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 sortirovka_and_number_prod">
-    <form action="#">
-      <p><strong>Сортировка по:</strong>
-        <select name="sortirovka_prod">
-          <option selected="selected">--</option>
-          <option value="0">Цене, по возрастанию</option>
-          <option value="1">Цене, по убыванию</option>
-          <option value="2">Названию товара, от А до Я</option>
-          <option value="3">Названию товара, от Я до А</option>
-         </select>
-      </p>
-      <p><strong>Показать:</strong>
-        <select name="number_prod_str">
-          <option selected="selected">12</option>
-          <option value="0">24</option>
-          <option value="1">48</option>
-         </select>
-      </p>
-      <button type="submit">Вперед</button>
-    </form>
-  </div>
-  <div class="col-lg-3 col-md-3 col-sm-3 hidden-xs view_list_prod">
-    <p><strong>Вид:</strong>
-      <a href="#"><i class="glyphicon glyphicon-th"></i><span>Сетка</span></a>
-      <a href="#"><i class="glyphicon glyphicon-th-list"></i><span>Список</span></a>
-    </p>
+    <?php $form = ActiveForm::begin();?>
+    <p><strong>Сортировка по:</strong><?= $form->field($model, 'rule')->dropDownList([
+                                                    '0' => 'Цене, по возрастанию',
+                                                    '1' => 'Цене, по убыванию',
+                                                    '2' => 'Названию товара, от А до Я',
+                                                    '3' => 'Названию товара, от Я до А'],
+                                    $params = [
+                                        'prompt' => '--',
+                                    ]
+              );?></p>
+    <p><strong>Показать:</strong><?= $form->field($model, 'number')->dropDownList(['3' => '3', '24' => '24', '48' => '48'], $params = [
+                                      'options' => ['3' => ['Selected' => true]],
+                                    ]
+              );?></p>
+      <?php echo Html::submitButton('Вперед');?>
+    <?php ActiveForm::end();?>
   </div>
 </div>
 </div>
     <?php foreach ($products_array as $product_array):?>
 
-    <!--<div class="col-lg-4 col-md-6 col-sm-4 col-xs-12">-->
-    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 view_list">
+    <div class="col-lg-4 col-md-6 col-sm-4 col-xs-12">
       <div class="product">
-        <a href="#" class="product_img">
+        <a href="<?=Url::toRoute(['page/product','id' => $product_array['id']]);?>" class="product_img">
           <?php if ($product_array['price'] != 0):?>
           <span>-<?php echo round(100 - $product_array['price_old']*100/$product_array['price']);?>%</span>
           <?php endif;?>
@@ -107,15 +100,6 @@ $this->title = 'Список товаров';
         <?php endif;?>
 
         </div>
-        <div class="desc_prod">
-          <table class="table table-striped table-bordered">
-            <tr>
-              <td>Описание</td>
-              <td>Карта</td>
-            </tr>
-          </table>
-        </div>
-
         <div class="product_btn">
           <a href="<?=Url::toRoute(['page/cart','id' => $product_array['id']]);?>" class="cart"><i class="glyphicon glyphicon-shopping-cart"></i></a>
           <a href="<?=Url::toRoute(['page/listorder','id' => $product_array['id']]);?>" class="mylist">Список желаний</a>
@@ -125,4 +109,5 @@ $this->title = 'Список товаров';
 
     <?php endforeach;?>
 </div>
+<?php LinkPager::widget(['pagination' => $pagination]) ?>
 </div>
