@@ -7,7 +7,7 @@ header{
 	width:100%;
 	background: url("../images/header_fon.jpg") no-repeat 50% 0;
 	overflow: hidden;
-    position: relative;
+	position: relative;
 }
 .header_top{
 	margin:50px 0 40px;
@@ -29,8 +29,8 @@ header{
 }
 .cart_top{
 	float: right;
-    position: relative;
-    width: 10%;
+	position: relative;
+	width: 10%;
 }
 .btn_top a{
 	color:#000;
@@ -76,13 +76,13 @@ header{
 }
 .cart_top a{
 	background: #ff5b23 none repeat scroll 0 0;
-    color: #fff;
-    display: block;
-    float: right;
-    padding: 13px 0;
-    position: absolute;
-    text-align: center;
-    width: 90%;
+	color: #fff;
+	display: block;
+	float: right;
+	padding: 13px 0;
+	position: absolute;
+	text-align: center;
+	width: 90%;
 }
 .cart_top a i{
 	font-size:24px;
@@ -100,13 +100,13 @@ header{
 }
 .menu_top li a{
 	color: #fff;
-    display: block;
-    font: bold 20px/26px "Roboto",sans-serif;
-    overflow: hidden;
-    padding: 25px 17px 29px;
-    position: relative;
-    text-transform: uppercase;
-    transition: all 0.4s cubic-bezier(0.895, 0.03, 0.685, 0.22) 0s;
+	display: block;
+	font: bold 20px/26px "Roboto",sans-serif;
+	overflow: hidden;
+	padding: 25px 17px 29px;
+	position: relative;
+	text-transform: uppercase;
+	transition: all 0.4s cubic-bezier(0.895, 0.03, 0.685, 0.22) 0s;
 }
 .menu_top li a:before{
 	background-color: #ff5b23;
@@ -126,10 +126,10 @@ header{
 	height:7px;
 }
 .menu_top li {
-    border-left: 1px solid #2f2f2f;
-    border-right: 1px solid #2f2f2f;
-    float: left;
-    margin-right: -1px;
+	border-left: 1px solid #2f2f2f;
+	border-right: 1px solid #2f2f2f;
+	float: left;
+	margin-right: -1px;
 }
 .menu_top li.active a:before{
 	height:7px;
@@ -155,8 +155,8 @@ header{
 }
 .ban_block a{
 	display: block;
-    padding: 20px 25px 30px;
-    position: relative;
+	padding: 20px 25px 30px;
+	position: relative;
 }
 .ban_block img{
 	display: block;
@@ -165,17 +165,17 @@ header{
 	margin-top:3px;
 }
 .ban_block span{
-    display: inline-block;
-    text-align: center;
-    background: rgba(255, 91, 35, 0.8) none repeat scroll 0 0;
-    border: medium none;
-    font-size:18px;
-    padding: 16px 20px 18px 21px;
-    position: relative;
-    text-transform: uppercase;
-    transition: all 0.3s ease 0s;
-    color:#fff;
-    font-weight: 600;
+	display: inline-block;
+	text-align: center;
+	background: rgba(255, 91, 35, 0.8) none repeat scroll 0 0;
+	border: medium none;
+	font-size:18px;
+	padding: 16px 20px 18px 21px;
+	position: relative;
+	text-transform: uppercase;
+	transition: all 0.3s ease 0s;
+	color:#fff;
+	font-weight: 600;
 }
 .ban_block span:hover{
 	opacity: 0.8;
@@ -212,12 +212,12 @@ header{
 }
 .product{
 	margin-bottom: 40px;
-    margin-top: 20px;
-    position: relative;
+	margin-top: 20px;
+	position: relative;
 }
 .product a.product_img{
 	border: 1px solid #eaeaea;
-    display: block;
+	display: block;
 }
 .product a.product_img img{
 	display: block;
@@ -247,25 +247,25 @@ header{
 }
 .product .price_old{
 	font-size: 16px;
-    margin-left: 10px;
-    text-decoration: line-through;
+	margin-left: 10px;
+	text-decoration: line-through;
 }
 .product_btn .cart{
 	background-color: #ff5b23;
-    color: #fff;
-    display: inline-block;
-    font-size: 30px;
-    height: 47px;
-    padding: 5px 10px;
-    float:left;
+	color: #fff;
+	display: inline-block;
+	font-size: 30px;
+	height: 47px;
+	padding: 5px 10px;
+	float:left;
 }
 .mylist{
 	background-color: #343434;
-    color: #fff;
-    float: left;
-    height: 47px;
-    margin-left: 5px;
-    padding: 13px 10px;
+	color: #fff;
+	float: left;
+	height: 47px;
+	margin-left: 5px;
+	padding: 13px 10px;
 }
 .write_email_and_sseti{
 	background: url("../images/fon_top_menu.png") no-repeat 50% 0;
@@ -312,14 +312,14 @@ header{
 }
 .write_email p{
 	background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
-    border: medium none;
-    color: #fff;
-    float: left;
-    font-size: 20px;
-    font-weight: bold;
-    margin: 0;
-    padding: 3px 11px 3px 0;
-    text-transform: uppercase;
+	border: medium none;
+	color: #fff;
+	float: left;
+	font-size: 20px;
+	font-weight: bold;
+	margin: 0;
+	padding: 3px 11px 3px 0;
+	text-transform: uppercase;
 }
 .write_email_and_sseti_wrap input {
 	widows: 100%;
@@ -334,66 +334,66 @@ header{
 }
 .write_email_and_sseti_wrap button{
 	background-color: #ff5b23;
-    border: 0 none;
-    border-radius: 0;
-    bottom: 0;
-    color: #fff;
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 40px;
-    z-index: 2;
+	border: 0 none;
+	border-radius: 0;
+	bottom: 0;
+	color: #fff;
+	display: block;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 40px;
+	z-index: 2;
 }
 .sseti_wrap a{
 	background: rgba(255, 255, 255, 0.1) none repeat scroll 0 0;
-    border-radius: 50%;
-    color: #fff;
-    display: block;
-    font-size: 26px;
-    height: 100%;
-    position: relative;
-    z-index: 1;
-    float:left;
-    transition: all 0.15s ease-in 0s;
-    padding:7px 10px 5px;
-    width:55px;
-    text-align: center;
-    margin-right: 7px;
+	border-radius: 50%;
+	color: #fff;
+	display: block;
+	font-size: 26px;
+	height: 100%;
+	position: relative;
+	z-index: 1;
+	float:left;
+	transition: all 0.15s ease-in 0s;
+	padding:7px 10px 5px;
+	width:55px;
+	text-align: center;
+	margin-right: 7px;
 }
 .sseti_wrap a::after {
-    background: #fff none repeat scroll 0 0;
-    border-radius: 50%;
-    box-sizing: content-box;
-    content: " ";
-    height: 100%;
-    left: -1px;
-    opacity: 0;
-    padding: 1px;
-    pointer-events: none;
-    position: absolute;
-    top: -1px;
-    transform: scale(1.2);
-    transition: transform 0.2s ease 0s, opacity 0.3s ease 0s;
-    width: 100%;
-    z-index: -1;
+	background: #fff none repeat scroll 0 0;
+	border-radius: 50%;
+	box-sizing: content-box;
+	content: " ";
+	height: 100%;
+	left: -1px;
+	opacity: 0;
+	padding: 1px;
+	pointer-events: none;
+	position: absolute;
+	top: -1px;
+	transform: scale(1.2);
+	transition: transform 0.2s ease 0s, opacity 0.3s ease 0s;
+	width: 100%;
+	z-index: -1;
 }
 .sseti_wrap a:hover {
-    color: #ff5b23;
+	color: #ff5b23;
 }
 .sseti_wrap a:hover::after {
-    opacity: 1;
-    transform: scale(1);
+	opacity: 1;
+	transform: scale(1);
 }
 .sseti_wrap{
 	margin-top: 6px;
-    text-align: right;
+	text-align: right;
 }
 .sseti_wrap > div {
-    display: inline-block;
-    overflow: hidden;
-    padding: 10px;
-    text-align: right;
+	display: inline-block;
+	overflow: hidden;
+	padding: 10px;
+	text-align: right;
 }
 .contacts p{
 	font-size:17px;
@@ -418,29 +418,29 @@ header{
 }
 .navigation ul li{
 	border: 1px solid #e0e0e0;
-    display: block;
-    float: left;
-    margin: 0;
-    border-right: 0px;
+	display: block;
+	float: left;
+	margin: 0;
+	border-right: 0px;
 }
 .navigation ul li:last-child{
 	border-right: 1px solid #e0e0e0;
 }
 .navigation ul li a{
-    color: #262626;
-    display: block;
-    font-size: 14px;
-    height: 28px;
-    padding: 4px 10px;
-    font-weight: 700;
+	color: #262626;
+	display: block;
+	font-size: 14px;
+	height: 28px;
+	padding: 4px 10px;
+	font-weight: 700;
 }
 .navigation ul li span{
-    color: #262626;
-    display: block;
-    font-size: 14px;
-    height: 28px;
-    padding: 4px 10px;
-    background-color: #F5F5F5;
+	color: #262626;
+	display: block;
+	font-size: 14px;
+	height: 28px;
+	padding: 4px 10px;
+	background-color: #F5F5F5;
 }
 .navigation ul li a:hover{
 	text-decoration: none;
@@ -452,8 +452,8 @@ header{
 }
 .short_description img{
 	display: block;
-    width: 25%;
-    float:left;
+	width: 25%;
+	float:left;
 }
 .short_description > div{
 	width:74%;
@@ -461,8 +461,8 @@ header{
 }
 .short_description h2{
 	color: #ff5b23;
-    display: inline-block;
-    font-size: 30px;
+	display: inline-block;
+	font-size: 30px;
 }
 
 /*Корзина*/
@@ -488,7 +488,7 @@ header{
 .cart_status li.active:after{
 	background: #ff5b23 none repeat scroll 0 0;
 	border-right: 1px solid #d53600;
-    border-top: 1px solid #d53600;
+	border-top: 1px solid #d53600;
 }
 .cart_status li.active{
 	background-color: #ff5b23;
@@ -496,19 +496,19 @@ header{
 }
 .cart_status li:after{
 	background: #ededed none repeat scroll 0 0;
-    border-right: 1px solid #c7c7c7;
-    border-top: 1px solid #c7c7c7;
-    content: "";
-    display: block;
-    height: 38px;
-    margin-top: 0;
-    position: absolute;
-    right: -17px;
-    text-indent: -5000px;
-    top: 6px;
-    transform: rotate(45deg);
-    width: 37px;
-    z-index: 1;
+	border-right: 1px solid #c7c7c7;
+	border-top: 1px solid #c7c7c7;
+	content: "";
+	display: block;
+	height: 38px;
+	margin-top: 0;
+	position: absolute;
+	right: -17px;
+	text-indent: -5000px;
+	top: 6px;
+	transform: rotate(45deg);
+	width: 37px;
+	z-index: 1;
 }
 .top_cart_block > div{
 	border-bottom: 1px solid #e0e0e0;
@@ -620,22 +620,22 @@ header{
 .order_prod{
 	padding:30px 20px;
 	background: #f1f1f1 none repeat scroll 0 0;
-    border: 1px solid #e0e0e0;
+	border: 1px solid #e0e0e0;
 }
 .order_prod input.input_text{
 	width: 50px;
 	text-align:center;
 }
 .price_prod {
-    color: #ff5b23;
-    font-size: 26px;
-    display: inline-block;
+	color: #ff5b23;
+	font-size: 26px;
+	display: inline-block;
 }
 .price_old_prod{
 	display: inline-block;
 	font-size: 16px;
-    margin-left: 10px;
-    text-decoration: line-through;
+	margin-left: 10px;
+	text-decoration: line-through;
 }
 .add_cart_prod{
 	background-color: #ff5b23;
@@ -711,18 +711,18 @@ header{
 }
 .reviews_title{
 	font-size: 17px;
-    font-weight: 500;
-    margin-bottom: 5px;
+	font-weight: 500;
+	margin-bottom: 5px;
 }
 .reviews_title span{
 	color: #bababa;
-    font-size: 14px;
-    font-weight: normal;
-    margin-left: 10px;
+	font-size: 14px;
+	font-weight: normal;
+	margin-left: 10px;
 }
 .reviews_form{
 	margin-top:20px;
-    overflow: hidden;
+	overflow: hidden;
 }
 .reviews_form form input, .reviews_form form textarea{
 	width:100%;
@@ -732,20 +732,20 @@ header{
 }
 .reviews_form p{
 	font-size: 17px;
-    font-weight: 500;
+	font-weight: 500;
 }
 .reviews_form i{
 	color: #ccc;
 	font-size:15px;
 }
 .reviews_form button{
-    background-color: #ff5b23;
-    color: #fff;
-    display: inline-block;
-    font-size: 15px;
-    margin: 10px 0 10px;
-    padding: 7px 20px;
-    border: 0px;
+	background-color: #ff5b23;
+	color: #fff;
+	display: inline-block;
+	font-size: 15px;
+	margin: 10px 0 10px;
+	padding: 7px 20px;
+	border: 0px;
 }
 .reviews_form button:hover{
 	background-color: #262626;
@@ -768,8 +768,8 @@ header{
 	text-decoration: none;
 }
 #w0.navbar{
-    margin-bottom: 0px;
-    border: 0px solid transparent;
+	margin-bottom: 0px;
+	border: 0px solid transparent;
 }
 #w0-collapse li a:hover{
 	color:#ff5b23;
@@ -816,10 +816,10 @@ header{
 }
 .view_list_prod span{
 	color: #ccc;
-    left: 0;
-    position: absolute;
-    right: 0;
-    font-size:12px;
+	left: 0;
+	position: absolute;
+	right: 0;
+	font-size:12px;
 }
 .view_list_prod i{
 	display: block;
@@ -848,20 +848,20 @@ header{
 }
 .header_list_prod h1{
 	font-size: 30px;
-    line-height: 30px;
-    margin: 0;
+	line-height: 30px;
+	margin: 0;
 }
 .value_prod p{
 	font-size: 14px;
-    line-height: 30px;
-    margin: 0;
+	line-height: 30px;
+	margin: 0;
 }
 .value_prod{
 	text-align: right;
 }
 .filter{
 	background: #faf7f0 none repeat scroll 0 0;
-    border: 1px solid rgba(0, 0, 0, 0.1);
+	border: 1px solid rgba(0, 0, 0, 0.1);
 }
 .filter label{
 	margin-top:10px;
@@ -880,13 +880,13 @@ header{
 }
 .filter button{
 	background-color: #ff5b23;
-    color: #fff;
-    display: inline-block;
-    float: left;
-    font-size: 16px;
-    padding: 5px 10px;
-    border:0px;
-    margin: 10px 0 20px;
+	color: #fff;
+	display: inline-block;
+	float: left;
+	font-size: 16px;
+	padding: 5px 10px;
+	border:0px;
+	margin: 10px 0 20px;
 }
 .filter button:hover{
 	opacity: 0.9;
@@ -904,9 +904,9 @@ header{
 	margin-bottom:40px;
 }
 .catalog .catalog_category img{
-		display: block;
-		margin: 0 auto;
-		margin-bottom: 20px;
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 20px;
 	-webkit-transition: all 1s ease;
 	-moz-transition: all 1s ease;
 	-ms-transition: all 1s ease;
@@ -936,10 +936,10 @@ header{
 
 @media all and (max-width: 1200px) and (min-width: 992px){
 	.ban_block p {
-	    color: #fff;
-	    display: block;
-	    font-size: 20px;
-	    width: 80%;
+		color: #fff;
+		display: block;
+		font-size: 20px;
+		width: 80%;
 	}
 	.contacts{
 		margin-top:30px;
@@ -948,9 +948,9 @@ header{
 }
 @media all and (max-width: 992px) and (min-width: 768px){
 	.logo img {
-	    display: block;
-	    width: 100%;
-	    max-width: 400px;
+		display: block;
+		width: 100%;
+		max-width: 400px;
 	}
 	.logo a{
 		display: inline-block;
@@ -960,8 +960,8 @@ header{
 		margin-bottom:20px;
 	}
 	.search_top input {
-	    padding: 14px 15px;
-	    width: 100%;
+		padding: 14px 15px;
+		width: 100%;
 	}
 	.btn_top{
 		text-align: center;
@@ -970,7 +970,7 @@ header{
 		display: none;
 	}
 	.ban_block h2 {
-	    font-size: 30px;
+		font-size: 30px;
 	}
 	.contacts{
 		margin-top:30px;
@@ -982,16 +982,16 @@ header{
 		width: 100%;
 	}
 	.value_cart > div {
-	    width: 60px;
-	    text-align: center;
+		width: 60px;
+		text-align: center;
 	}
 	.value_cart > div input{
 		margin-bottom:5px;
 	}
 	.logo img {
-	    display: block;
-	    width: 100%;
-	    max-width: 400px;
+		display: block;
+		width: 100%;
+		max-width: 400px;
 	}
 	.logo a{
 		display: inline-block;
@@ -1001,8 +1001,8 @@ header{
 		margin-bottom:20px;
 	}
 	.search_top input {
-	    padding: 14px 15px;
-	    width: 100%;
+		padding: 14px 15px;
+		width: 100%;
 	}
 	.btn_top{
 		text-align: center;
@@ -1011,46 +1011,46 @@ header{
 		border-color:#ccc;
 	}
 	.navbar-toggle .icon-bar {
-	    background-color: #ccc;
+		background-color: #ccc;
 	}
 	#w0-collapse{
 		background-color: #000;
-	    bottom: 0;
-	    height: 100%;
-	    left: 0;
-	    position: fixed;
-	    right: 0;
-	    top: 0;
-	    width: 100%;
-	    z-index: 111;
-	    padding-top: 10%;
+		bottom: 0;
+		height: 100%;
+		left: 0;
+		position: fixed;
+		right: 0;
+		top: 0;
+		width: 100%;
+		z-index: 111;
+		padding-top: 10%;
 	}
 	.menu_top .navbar-toggle.active{
 		border-color: transparent;
-	    height: 22px;
-	    position: fixed;
-	    right: 10px;
-	    top: 10px;
-	    width: 30px;
-	    z-index: 112;
+		height: 22px;
+		position: fixed;
+		right: 10px;
+		top: 10px;
+		width: 30px;
+		z-index: 112;
 	}
 	.menu_top .navbar-toggle.active .icon-bar:nth-child(3){
 		display: none;
 	}
 	.menu_top .navbar-toggle.active .icon-bar:nth-child(2){
 		-moz-transform: rotate(45deg);
-	    -ms-transform: rotate(45deg);
-	    -webkit-transform: rotate(45deg);
-	    -o-transform: rotate(45deg);
-	    transform: rotate(45deg);
-	    margin-top: 0;
+		-ms-transform: rotate(45deg);
+		-webkit-transform: rotate(45deg);
+		-o-transform: rotate(45deg);
+		transform: rotate(45deg);
+		margin-top: 0;
 	}
 	.menu_top .navbar-toggle.active .icon-bar:nth-child(4){
 		-moz-transform: rotate(-45deg);
-	    -ms-transform: rotate(-45deg);
-	    -webkit-transform: rotate(-45deg);
-	    -o-transform: rotate(-45deg);
-	    transform: rotate(-45deg);
+		-ms-transform: rotate(-45deg);
+		-webkit-transform: rotate(-45deg);
+		-o-transform: rotate(-45deg);
+		transform: rotate(-45deg);
 	}
 	.menu_top .navbar-toggle.active .icon-bar{
 		margin-top: 0;
@@ -1058,12 +1058,12 @@ header{
 	}
 	#w0-collapse li{
 		float: none;
-	    display: block;
-	    position: relative;
-	    width: 70%;
-	    margin:0 auto;
-	    border-left: 0px solid #2f2f2f;
-	    border-right: 0px solid #2f2f2f;
+		display: block;
+		position: relative;
+		width: 70%;
+		margin:0 auto;
+		border-left: 0px solid #2f2f2f;
+		border-right: 0px solid #2f2f2f;
 	}
 	#w0-collapse li a{
 		text-align: center;
@@ -1075,15 +1075,15 @@ header{
 		color:#ff5b23;
 	}
 	.menu_top .navbar-toggle.active:hover .icon-bar {
-	    background-color: #ff5b23;
+		background-color: #ff5b23;
 	}
 	.ban_block img {
-	    width: 100%;
+		width: 100%;
 	}
 	.ban_block p {
-	    margin: 20px 0;
-	    width: 70%;
-	    font-size: 24px;
+		margin: 20px 0;
+		width: 70%;
+		font-size: 24px;
 	}
 	.ban_block.ban1{
 		margin-bottom: 10px;
@@ -1104,36 +1104,36 @@ header{
 		display: none;
 	}
 	.tabs_block_main .nav-tabs > li > a {
-	    display: block;
-	    padding: 10px 6px;
+		display: block;
+		padding: 10px 6px;
 	}
 }
 @media all and (max-width: 550px){
 	.btn_top a{
 		text-align: left;
 		display: block;
-	    font-size: 22px;
-	    margin-bottom: 5px;
+		font-size: 22px;
+		margin-bottom: 5px;
 	}
 	.btn_and_search{
 		width: 100%;
 	}
 	.cart_top {
-	    float: right;
-	    position: absolute;
-	    width: 20%;
-	    right: 0px;
+		float: right;
+		position: absolute;
+		width: 20%;
+		right: 0px;
 	}
 	.ban_block_wrap{
 		display: none;
 	}
 	header {
-	    height: 500px;
+		height: 500px;
 	}
 	.footer_menu {
-	    display: block;
-	    float: left;
-	    width: 100%;
+		display: block;
+		float: left;
+		width: 100%;
 	}
 	.footer_menu h3{
 		font-size: 24px;
